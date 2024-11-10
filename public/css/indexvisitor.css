@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #007c2b;
+}
+body{
+    font-family: var(--sm-font);
+    padding-top: 80px; /* Sesuaikan tinggi ini dengan tinggi navbar Anda */
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary{
+    color: var(--pink)!important;
+}
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 200px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+/* #header{
+    background: url('/images/banner-img-1.jpg') top/cover no-repeat;
+
+
+
+/* /////////////// */
+.carousel-item {
+    position: relative;
+    height: 100vh; /* Adjust banner height */
+    
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Ensure text contrast */
+    text-align: center;
+}
+
+/* Title and subtitle positioning */
+.carousel-inner h1 {
+    font-size: 70px;
+    font-family: var(--lg-font);
+    color: #fff;
+}
+
+.carousel-inner p {
+    font-size: 30px;
+    font-family: var(--sm-font);
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Button styling */
+.carousel-item .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: var(--sm-font);
+    border: 2px solid #fff;
+}
+
+.carousel-item .btn:hover {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: #fff;
+}
+
+/* Adjust container to center content */
+.container.h-100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-small {
+    height: 50vh; /* Mengatur tinggi menjadi setengah halaman */
+    background-color: rgb(0, 0, 0); /* Background hitam untuk area kosong */
+    background-position: center; /* Memusatkan gambar */
+    background-size: contain; /* Menyesuaikan gambar agar tetap berada dalam area carousel */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+}
+
+.carousel-small img {
+    object-fit: contain; /* Agar gambar menyesuaikan tanpa terpotong */
+    height: 50vh; /* Menjaga tinggi setengah halaman */
+    background-color: rgb(0, 0, 0); /* Latar belakang hitam */
+}
+
+
+/* /////////////////// */
+
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/* special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* offers */
+#offers{
+    background: url('/images/promo.jpg') top/cover no-repeat;
+    object-fit: contain; /* Agar gambar menyesuaikan tanpa terpotong */
+}
+#offers .row{
+    min-height: 70vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* newsletter */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink)!important;
+}
+
+
+/* ////card */
+
+.card-img-top {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px; /* Adjust the value to your preferred corner radius */
+}
+
+/* Image Wrapper with Padding */
+.special-img-wrapper {
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 8px;
+    background-color: white; /* Or any background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional for subtle shadow */
+}
+.card-hover {
+    transition: transform 0.3s ease;
+}
+.card-hover:hover {
+    transform: scale(1.05);
+}
+
+
+.icon{
+    width: 50px; /* Adjust this value to match the size of the "Best Sellers" icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+/* media queries */
+@media(max-width: 767px){
+    .nav-item{
+        border-bottom: none;
+    }
+    .navbar-brand img {
+        width: 150px; /* Adjust logo size for smaller screens */
+    }
+    .navbar-brand span {
+        font-size: 18px;
+    }
+    
+    /* Carousel */
+    .carousel-inner h1 {
+        font-size: 40px; /* Smaller font size for title */
+    }
+    .carousel-inner p {
+        font-size: 20px; /* Smaller font size for subtitle */
+    }
+    .carousel-item {
+        height: 60vh; /* Adjust banner height on smaller screens */
+    }
+    
+    /* Button Styling */
+    .carousel-item .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    /* Collection and Special Sections */
+    .collection-img span, .special-img span {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Cards */
+    .card-img-top {
+        height: 80px; /* Reduce image height for cards */
+    }
+
+    /* Title */
+    .title h2::before {
+        left: -10px; /* Adjust alignment */
+        height: 30px;
+    }
+
+    /* Offers */
+    #offers .row {
+        min-height: 50vh; /* Reduce height */
+    }
+    .offers-content h2 {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    /* Footer */
+    .Footer-Zain h2 {
+        font-size: 0.9rem !important; /* Smaller font size */
+    }
+
+    /* General adjustments for smaller text and padding */
+    .btn:not(.nav-btns button) {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .text-primary, .bg-primary {
+        font-size: 14px;
+    }
+
+    /* Container adjustments */
+    .container.h-100 {
+        padding: 10px;
+    }
+
+    /* Footer text alignment */
+    footer .brand {
+        font-size: 14px;
+    }
+}
+
+
+
+
+footer .text-muted{
+    color: #fff !important;
+}
+
+.Footer-Zain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 3rem;
+}
+.Footer-Zain h2{ 
+    color: #fff;
+    font-size: 1rem !important;
+    margin-bottom: 0px;
+}
+
+.Footer-Zain h2 a{
+    color: #e5345b;
+    text-decoration: none;
+}
+
+
+.Footer-Zain h2 a:hover{
+    color: #fff !important;
+}

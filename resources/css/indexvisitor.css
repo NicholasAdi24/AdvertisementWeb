@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif; /* Choose a font you like */
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center; 
+}
+
+header h1 {
+    margin: 0; 
+    font-size: 3em; 
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ad Banner Styling */
+.ads-section {
+    margin-top: 20px;
+}
+
+.ad-item {
+    text-align: center; /* Center text in ad banners */
+}
+
+.ad-item img {
+    width: 100%; 
+    height: 85px; 
+    object-fit: cover;
+}
+
+/* Content Area Styling */
+.content-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.article-card {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.article-card h3 {
+    margin-top: 10px;
+}
+
+.article-card .category {
+    background-color: #5cb85c; /* Example color */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
